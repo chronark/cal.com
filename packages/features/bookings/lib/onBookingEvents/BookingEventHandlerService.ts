@@ -17,7 +17,7 @@ import type { BookingStatus } from "@calcom/prisma/enums";
 
 import type { Actor } from "../types/actor";
 import { getActorUserId } from "../types/actor";
-import type { BookingCreatedPayload, BookingRescheduledPayload } from "./types.d";
+import type { BookingCreatedPayload, BookingRescheduledPayload } from "./types";
 
 interface BookingEventHandlerDeps {
   log: Logger<unknown>;

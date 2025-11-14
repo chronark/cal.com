@@ -2672,7 +2672,7 @@ model AuditActor {
   id   String         @id @default(uuid())
   type AuditActorType
 
-  // References for different actor types
+  // References for different actor types (soft references, no FK constraints)
   userUuid   String? @db.Uuid // For USER type (nullable to allow user deletion)
   attendeeId Int? // For ATTENDEE type(nullable to allow attendee deletion)
 
